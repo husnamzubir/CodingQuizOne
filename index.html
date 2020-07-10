@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Web Portfolio: Online Shopping</title>
-</head>
-<body>
-<!-- The content of your web page will go here -->
-<table>
-  <tr>
-    <td><img src="Images/logo.jpg" height="50" width="50"></td>
-    <td><h1>Online Shopping</h1></td>
-  </tr>
-</table>
-<nav>
-<a href="#">Home</a> |
-<a href="Contact.html">Contact</a> |
-  <a href="https://www.facebook.com/">Facebook</a> |
-</nav>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Text Format</title>
+  </head>
+  <body>
+    <select id="size" name="size" onchange="changeFont()" required>
+      <option selected value="10">xx-Small</option>
+      <option value="12px" >x-Small</option>
+      <option value="14px">Small</option>
+      <option value="16">Medium</option>
+      <option value="18">Large</option>
+      <option value="20">x-Large</option>
+      <option value="22">xx-Large</option>
+    </select>
 
-<p>
-  Online shopping site based that brings you great deals, with platforms existing across Asia We offer unbeatable deals featuring an endless range of products priced at affordable rates. 
-</p>
+      <button type="button" name="button" id="btnBlack" onclick="changeStyle()">Black</button>
+      <button type="button" name="button" id="btnRed" onclick="changeStyle()">Red</button>
+      <button type="button" name="button" id="btnBlue" onclick="changeStyle()">Blue</button>
+      <br>
+
+      <textarea cols="40" rows="8" id="text" placeholder="Write your message...." required></textarea><br/><br/>
+
+      <script src="TextFormat.js"></script>
 
 
-<ul>
-  <li>Name: Student Name
-  </li>
-  <li>
-    Section: Section Number
-  </li>
-</ul>
 
-</body>
+
+  </body>
 </html>
